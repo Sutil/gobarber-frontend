@@ -1,0 +1,5 @@
+export default {
+  AUTH_SIGN_IN_REQUEST: '@auth/SIGN_IN_REQUEST',
+  AUTH_SIGN_IN_SUCCESS: '@auth/SIGN_IN_SUCCESS',
+  AUTH_SIGN_FAILURE: '@auth/SIGN_FAILURE'
+}
