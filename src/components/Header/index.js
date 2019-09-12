@@ -7,6 +7,7 @@ import {
 } from './styles';
 
 import logo from '~/assets/logo-purple.svg';
+import Notifications from '../Notifications';
 
 export default function Header() {
   return (
@@ -17,6 +18,7 @@ export default function Header() {
           <Link to="/dashboard" >DASHBOARD</Link>
         </nav>
         <aside>
+          <Notifications />
           <Profile>
             <div>
               <strong>Eduardo Sutil</strong>
