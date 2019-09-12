@@ -1,5 +1,12 @@
 import ActionNames from '../../actionNames';
 
+export function signUpRequest(name, email, password) {
+  return {
+    type: ActionNames.AUTH_SIGN_UP_REQUEST,
+    payload: { name, email, password },
+  }
+}
+
 export function signInRequest(email, password) {
   return {
     type: ActionNames.AUTH_SIGN_IN_REQUEST,
