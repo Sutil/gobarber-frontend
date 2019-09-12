@@ -26,3 +26,10 @@ export function signFailure() {
     type: ActionNames.AUTH_SIGN_FAILURE,
   }
 }
+
+
+export function signOut() {
+  return {
+    type: ActionNames.AUTH_SIGN_OUT,
+  }
+}
