@@ -4,7 +4,7 @@ const primary = '#49265c';
 const secondary = '#ff8b0d';
 const error = '#f64c75';
 const info = '#3b9eff';
-const warn = '#fafa11';
+const warn = '#ff5500';
 const success = '#008300'
 
 export default {
@@ -15,4 +15,8 @@ export default {
   secondaryLight: `${lighten(0.1, secondary)}`,
   secondaryDark: `${darken(0.1, secondary)}`,
   error,
+  info,
+  warn,
+  warnDark: `${darken(0.1, warn)}`,
+  success
 }

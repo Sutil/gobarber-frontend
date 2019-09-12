@@ -1,19 +1,9 @@
 import styled from 'styled-components';
-import { lighten } from 'polished';
 import colors from '~/styles/colors';
 
-export const Wrapper = styled.div`
-  height: 100%;
-  background: linear-gradient(135deg, #49265c, ${lighten(0.3, '#49265c')});
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const Content = styled.div`
-  width: 100%;
-  max-width: 315px;
-  text-align: center;
+export const Container = styled.div`
+  max-width: 600px;
+  margin: 50px auto;
 
   form {
     display: flex;
@@ -40,8 +30,15 @@ export const Content = styled.div`
       margin: 0 0 10px;
     }
 
+    hr {
+      border: 0;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 10px 0 20px;
+    }
+
     button {
-      margin: 5px;
+      margin: 5px 0 0;
       height: 44px;
       background: ${colors.secondary};
       color: white;
@@ -55,18 +52,22 @@ export const Content = styled.div`
       }
     }
 
-    a {
-      color: #fff;
-      font-size: 16px;
-      opacity: 0.8;
+  }
 
-      transition: opacity 0.2s;
+  > button {
+      width: 100%;
+      margin: 10px 0 0;
+      height: 44px;
+      background: ${colors.warn};
+      color: white;
+      border: 0;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background 0.2s;
 
       &:hover {
-        opacity: 1;
+        background: ${colors.warnDark};
       }
-
-    }
-
   }
+
 `;
